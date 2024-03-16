@@ -22,7 +22,6 @@ defmodule HottestCity.Processor do
 
   @impl true
   def handle_message(:default, message, _context) do
-# IO.inspect(message, label: "message in h_mess")
     message
     |> Message.update_data(fn {city, country, lat, lon} ->
 
